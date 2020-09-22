@@ -4,6 +4,8 @@ import { useStaticQuery, graphql } from "gatsby";
 
 import Navbar from './Navbar';
 import Hero from './Hero';
+import Content from './Content';
+import iphone from '../images/iphone.png';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,6 +22,8 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       <Hero siteTitle={data.site.siteMetadata?.title || `Title`}/>
+      <Content />
+      <img className='iphone' src={iphone} />
       <div
         style={{
           margin: `0 auto`,

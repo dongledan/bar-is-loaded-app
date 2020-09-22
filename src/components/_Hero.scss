@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5%;
+    margin-left: 20.5%;
 
     @include tablet {
       width: 80%;
@@ -30,8 +30,33 @@
       margin: 20px 0 40px 0;
     }
     .button-container {
-      
+
+      .app-store {
+        background-image: url('../images/appstore.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        background-color: transparent;
+        height: 60px;
+        width: 200px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      .google-play {
+        background-image: url('../images/googleplay.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        background-color: transparent;
+        height: 60px;
+        width: 200px;
+        cursor: pointer;
+      }
     }
+
   }
   
 }
