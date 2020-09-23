@@ -1,10 +1,15 @@
 .iphone {
-  position: fixed;
-  top: 50%;
-  right: 17.5%;
-  height: 80vh;
-  width: auto;
-  z-index: 99;
-  margin-top: -40vh;
+  z-index: -10;
+  background-image: url('../images/img-0.png');
+  background-size: auto 572px;
+  background-repeat: no-repeat;
+  background-position: center;
 
+  @include tablet {
+    top: 73%;
+    left: 50%;
+    margin-left: -147.69px;
+  }
 }
+
+

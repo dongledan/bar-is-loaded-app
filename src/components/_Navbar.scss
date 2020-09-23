@@ -1,6 +1,7 @@
 .navbar-container {
   display: flex;
-  margin: 0, auto;
+  margin: 0 auto;
+  max-width: 1096px;
   
   .navbar {
     justify-content: space-between;
@@ -8,7 +9,14 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin: 0 15%;
+
+    @include tablet {
+      margin: 0 10%;
+
+      @include mobile {
+        margin: 0 5%;
+      }
+    }
 
     .left-container {
       display: flex;
