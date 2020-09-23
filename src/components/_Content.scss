@@ -2,41 +2,55 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 70vh;
+  height: 60vh;
   flex-direction: row;
   max-width: 1096px;
+  margin: 0 auto;
 
-  @include tablet {
-    position: relative;
-    top: 0;
-    margin-top: -32vh;
-    width: 80%;
-    margin: auto;
-    justify-content: flex-start;
+  @include mobile {
+    margin-top: 10vh;
   }
 
   .box {
-    flex: 3;
+    flex: 1;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   .feature-container {
-    flex: 1.5;
-    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+
+    @include mobile {
+      flex: none;
+      width: 75%;
+      margin: 0 auto;
+    }
 
     .feature-title {
       font-weight: 600;
       font-size: 1.188em;
       margin-bottom: 20px;
+
+      @include mobile {
+        text-align: center;
+      }
     }
     .feature-content {
       line-height: 1.5em;
+
+      @include mobile {
+        text-align: center;
+      }
     }
   }
 
   .iphone {
     position: fixed;
     top: 50%;
-    left: 20.9%;
+    left: 25.9%;
     width: auto;
     height: 600px;
     z-index: 70;
@@ -45,8 +59,8 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include tablet {
-      top: 73%;
+    @include mobile {
+      top: 80%;
       left: 50%;
       margin-left: -147.69px;
     }

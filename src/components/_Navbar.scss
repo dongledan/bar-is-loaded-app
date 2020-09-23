@@ -1,11 +1,11 @@
 .navbar-container {
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 1096px;
   
   .navbar {
     justify-content: space-between;
-    font-size: 1.188em;
+    font-size: 1.1em;
     display: flex;
     align-items: center;
     width: 100%;
@@ -26,10 +26,16 @@
         height: 60px;
         width: 60px;
       }
+      .logo-text {
+        color: #fff;
+        padding: 10px 0;
+        margin: 0 10px;
+      }
     }
     .right-container {
       display: flex;
       flex-direction: row;
+      cursor: pointer;
     }
 
     .link-text {
@@ -39,6 +45,7 @@
       margin: 0 25px;
       padding: 10px 0;
       color: #fff;
+      cursor: pointer;
 
       &:after {
         position: absolute;

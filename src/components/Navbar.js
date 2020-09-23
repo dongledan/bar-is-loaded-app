@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 
 import logo from '../images/logo.png';
 
@@ -9,12 +10,9 @@ export default function Navbar() {
       <nav className="navbar">
         <div className="left-container">
           <img className="logo" src={logo} alt="logo-icon"/>
-          <div className="link-text">Bar Is Loaded</div>
+            <div className="logo-text">Bar Is Loaded</div>
         </div>
-        <div className="right-container">
-          <div className="link-text">Features</div>
-          <div className="link-text">Contact</div>
-        </div>
+      
 
       </nav>
     </div>

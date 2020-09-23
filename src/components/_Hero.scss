@@ -5,7 +5,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: 10vh;
 
   .width-container {
     max-width: 1096px;
@@ -14,7 +13,12 @@
     align-items: center;
     margin: 0 auto;
 
-    .iphone {
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .hero-iphone {
       position: relative;
       width: auto;
       height: 600px;
@@ -23,23 +27,25 @@
       background-size: auto 572px;
       background-repeat: no-repeat;
       background-position: center;
-    
-      @include tablet {
-        top: 73%;
+
+      @include mobile {
+        top: 80%;
         left: 50%;
         margin-left: -147.69px;
+        position: fixed;
+        margin-top: -300px;
       }
     }
     
-    .content-container {
+    .hero-content-container {
       width: 45%;
       display: flex;
       flex-direction: column;
       justify-content: center;
 
       @include tablet {
-        margin-top: 120px;
-        width: 80%;
+        margin-top: 100px;
+        width: 90%;
 
         @include mobile {
           align-items: center;
@@ -55,7 +61,7 @@
           font-size: 3em;
 
           @include mobile {
-            font-size: 1.5em;
+            font-size: 2em;
             text-align: center;
             margin: 0 auto;
           }

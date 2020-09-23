@@ -7,13 +7,13 @@ export default function Content() {
   return (
     <div>
       {features.map((feature, i) => (
-        <div className="content-container" data-sal="fade" data-sal-delay="500" data-sal-easing="ease-out-back" key={i}>
+        <div className="content-container" data-sal="fade" data-sal-delay="500" data-sal-easing="ease-out-sine" key={i}>
           <div className="box" />
           <div className="feature-container">
             <div className="feature-title">{feature.title}</div>
             <div className="feature-content">{feature.content}</div>
           </div>
-          <img className='iphone' src={iphone} style={{backgroundImage: `url(${feature.image})`}}/>
+          <img className='iphone' src={iphone} style={{backgroundImage: `url(${feature.image})`}} />
        </div>
       ))}
     </div>
