@@ -13,6 +13,7 @@
 
   .box {
     flex: 1;
+    margin-left: 15%;
 
     @include mobile {
       display: none;
@@ -22,12 +23,20 @@
   .feature-container {
     flex: 1;
     justify-content: center;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
 
-    @include mobile {
-      flex: none;
-      width: 75%;
-      margin: 0 auto;
+    @include tablet {
+      margin-right: 10%;
+
+      @include mobile {
+        flex: none;
+        max-width: 300px;
+        margin: 0 auto;
+      }
     }
+  
 
     .feature-title {
       font-weight: 600;
@@ -40,9 +49,11 @@
     }
     .feature-content {
       line-height: 1.5em;
+      font-weight: 200;
 
       @include mobile {
         text-align: center;
+        font-size: 0.9em;
       }
     }
   }
@@ -50,19 +61,24 @@
   .iphone {
     position: fixed;
     top: 50%;
-    left: 25.9%;
+    left: 23%;
     width: auto;
     height: 600px;
-    z-index: 70;
     margin-top: -300px;
+    z-index: -2;
     background-size: auto 572px;
     background-repeat: no-repeat;
     background-position: center;
+    @include tablet {
+      left: 10%;
 
-    @include mobile {
-      top: 80%;
-      left: 50%;
-      margin-left: -147.69px;
+      @include mobile {
+        top: 80%;
+        left: 50%;
+        z-index: 70;
+        margin-left: -147.69px;
+      }
     }
+  
   }
 }
