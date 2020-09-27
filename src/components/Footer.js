@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import {
   FaGithub,
   FaEnvelope,
@@ -20,38 +21,54 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <div className=" copyright-container">
-        <div className="footer-copyright">
-          © {new Date().getFullYear()} Danny Li ✌️
-        </div>
-        <div className="divider">{"\xa0"}</div>
         <div className="footer-social-container">
-          <a className="footer-social mail" href="mailto:dongledan@yahoo.com">
+          <a className="footer-social icon" href="mailto:dongledan@yahoo.com">
             <FaEnvelope />
           </a>
           <a
-            className="footer-social github"
+            className="footer-social icon"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/dongledan"
+            href="https://github.com/dongledan/bar-is-loaded"
           >
             <FaGithub />
           </a>
           <a
-            className="footer-social google"
+            className="footer-social icon"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://play.google.com/store/apps/developer?id=dongledan&hl=en_US"
+            href="https://play.google.com/store/apps/details?id=com.dongledan.barisloaded&hl=en_US"
           >
             <FaGooglePlay />
           </a>
           <a
-            className="footer-social apple"
+            className="footer-social icon"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://apps.apple.com/us/developer/danny-li/id1509374209"
+            href="https://apps.apple.com/us/app/bar-is-loaded-gym-calculator/id1509374210"
           >
             <FaApple />
           </a>
+        </div>
+        <div className="footer-links-container">
+          <Link className="footer-link" to={"/privacy-policy"}>
+            Privacy Policy •{" "}
+          </Link>
+          <a className="footer-link" href="mailto:dongledan@yahoo.com">
+            Contact •{" "}
+          </a>
+          <a
+            className="footer-link"
+            style={{ color: "#E42218" }}
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://dannyboy.dev/"
+          >
+            Danny Li
+          </a>
+        </div>
+        <div className="footer-copyright">
+          © {new Date().getFullYear()} Danny Li. All rights reserved.
         </div>
       </div>
       <div className="back-to-top-container">

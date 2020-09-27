@@ -1,0 +1,48 @@
+.closing-container {
+  display: flex;
+  background: $white;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    .app-store {
+      background-image: url('../images/appstore.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      background-color: transparent;
+      height: 50px;
+      width: 166.67px;
+      margin-right: 20px;
+      cursor: pointer;
+      border-radius: 8px;
+
+      @include tablet {
+        height: 45px;
+        width: 133.33px;
+      }
+    }
+
+    .google-play {
+      background-image: url('../images/googleplay.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: none;
+      background-color: transparent;
+      height: 50px;
+      width: 166.67px;
+      cursor: pointer;
+      border-radius: 8px;
+
+      @include tablet {
+        height: 45px;
+        width: 133.33px;
+      }
+    }
+  }
+}

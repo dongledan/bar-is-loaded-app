@@ -18,6 +18,10 @@
     flex-direction: column;
     padding: 10px;
 
+    @include mobile {
+      width: 40%;
+    }
+
     .icon {
       color: $red;
       font-size: 42px;
@@ -32,6 +36,11 @@
     .feature-content {
       font-weight: 200;
       text-align: center;
+
+      @include mobile {
+        font-size: 0.9em;
+        font-weight: 200;
+      }
     }
   }
 }

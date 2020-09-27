@@ -16,7 +16,10 @@ export default class Content extends Component {
             <div className="content-container" key={i}>
               <div className="box" />
               <div className="feature-container">
-                <div className="feature-title">{feature.title}</div>
+                <div className="feature-title">
+                  {feature.title}
+                  <div className="feature-line" />
+                </div>
                 <div className="feature-content">{feature.content}</div>
               </div>
               <img
@@ -30,11 +33,15 @@ export default class Content extends Component {
               className="content-container"
               data-sal="fade"
               data-sal-easing="ease-out-back"
+              data-sal-delay="200"
               key={i}
             >
               <div className="box" />
               <div className="feature-container">
-                <div className="feature-title">{feature.title}</div>
+                <div className="feature-title">
+                  {feature.title}
+                  <div className="feature-line" />
+                </div>
                 <div className="feature-content">{feature.content}</div>
               </div>
               <img
