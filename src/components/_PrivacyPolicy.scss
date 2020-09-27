@@ -1,8 +1,9 @@
 .privacy-policy-container {
   max-width: 1096px;
   display: flex;
-  margin: 100px 10% 0 10%;
+  margin: 100px auto 0 auto;
   flex-direction: column;
+  padding: 0 10%;
 
   .privacy-policy-header {
     font-size: 2em;
@@ -20,7 +21,7 @@
 
   .privacy-policy-subheader {
     font-size: 1.188em;
-    text-align: center;
+    text-align: left;
     margin: 20px 0 10px 0;
     font-weight: 600;
   }
