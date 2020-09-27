@@ -37,17 +37,17 @@ export default function Footer() {
             className="footer-social icon"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://play.google.com/store/apps/details?id=com.dongledan.barisloaded&hl=en_US"
+            href="https://apps.apple.com/us/app/bar-is-loaded-gym-calculator/id1509374210"
           >
-            <FaGooglePlay />
+            <FaApple />
           </a>
           <a
             className="footer-social icon"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://apps.apple.com/us/app/bar-is-loaded-gym-calculator/id1509374210"
+            href="https://play.google.com/store/apps/details?id=com.dongledan.barisloaded&hl=en_US"
           >
-            <FaApple />
+            <FaGooglePlay />
           </a>
         </div>
         <div className="footer-links-container">
