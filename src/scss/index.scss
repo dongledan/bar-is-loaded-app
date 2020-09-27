@@ -1,0 +1,25 @@
+@import 'breakpoints';
+@import 'colors';
+
+@import '../components/Hero';
+@import '../components/Navbar';
+@import '../components/Layout';
+@import '../components/Content';
+@import '../components/Features';
+@import '../components/Closing';
+@import '../components/PrivacyPolicy';
+@import '../components/Footer';
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  color: $black;
+  background: $white;
+}

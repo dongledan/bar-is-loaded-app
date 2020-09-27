@@ -1,0 +1,36 @@
+.privacy-policy-container {
+  max-width: 1096px;
+  display: flex;
+  margin: 100px auto 0 auto;
+  flex-direction: column;
+  padding: 0 10%;
+
+  .privacy-policy-header {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .privacy-policy-update {
+    color: $gray;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .privacy-policy-subheader {
+    font-size: 1.188em;
+    text-align: left;
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+  }
+  .privacy-policy-paragraph {
+    font-weight: 300;
+
+    .email {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+}

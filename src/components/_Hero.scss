@@ -1,0 +1,129 @@
+.hero-container {
+  height: 100vh;
+  display: flex;
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .width-container {
+    max-width: 1096px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 1000;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .hero-iphone {
+      position: relative;
+      width: auto;
+      height: 600px;
+      z-index: 50;
+      background-image: url('../images/img-1.png');
+      background-size: auto 572px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include mobile {
+        top: 80%;
+        left: 50%;
+        margin-left: -147.69px;
+        position: fixed;
+        margin-top: -300px;
+        z-index: 0;
+      }
+    }
+    
+    .hero-content-container {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+        @include mobile {
+          margin-top: 100px;
+          width: 90%;
+          align-items: center;
+        }
+
+      .header {
+        font-size: 3.5em;
+        color: $white;
+
+        @include tablet {
+          font-size: 3em;
+
+          @include mobile {
+            font-size: 2em;
+            margin: 10px auto 0 auto; 
+          }
+        }
+      }
+      .subtitle {
+        font-size: 1.188em;
+        color: $white;
+        line-height: 1.6em;
+        margin: 20px 0 40px 0;
+        font-weight: 300;
+
+        @include tablet {
+          font-size: 1em;
+          line-height: 1.4em;
+
+          @include mobile {
+            margin: 10px 0 20px 0;
+            font-weight: 300;
+          }
+        }
+      }
+      .button-container {
+        display: flex;
+        flex-direction: row;
+        .app-store {
+          background-image: url('../images/appstore.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border: none;
+          background-color: transparent;
+          height: 50px;
+          width: 166.67px;
+          margin-right: 20px;
+          cursor: pointer;
+          border-radius: 8px;
+
+          @include tablet {
+            height: 45px;
+            width: 133.33px;
+          }
+        }
+
+        .google-play {
+          background-image: url('../images/googleplay.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border: none;
+          background-color: transparent;
+          height: 50px;
+          width: 166.67px;
+          cursor: pointer;
+          border-radius: 8px;
+
+          @include tablet {
+            height: 45px;
+            width: 133.33px;
+          }
+        }
+      }
+
+    }
+  }
+  
+}
