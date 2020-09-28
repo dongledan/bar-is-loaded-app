@@ -21,6 +21,10 @@ export default class Content extends Component {
                   <div className="feature-line" />
                 </div>
                 <div className="feature-content">{feature.content}</div>
+                <div className="stars">★★★★★</div>
+                <div className="review-title">{feature.reviewTitle}</div>
+                <div className="review"><span className="quote">"</span>{`\xa0`}{`\xa0`}{feature.review}<span className="quote">"</span></div>
+                <div className="review-author">By {feature.author} via the App Store</div>
               </div>
               <img
                 className="iphone"
@@ -43,6 +47,10 @@ export default class Content extends Component {
                   <div className="feature-line" />
                 </div>
                 <div className="feature-content">{feature.content}</div>
+                <div className="stars">★★★★★</div>
+                <div className="review-title">{feature.reviewTitle}</div>
+                <div className="review"><span className="quote">"</span>{`\xa0`}{`\xa0`}{feature.review}<span className="quote">"</span></div>
+                <div className="review-author">By {feature.author} via the App Store</div>
               </div>
               <img
                 className="iphone"

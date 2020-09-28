@@ -10,6 +10,7 @@ import {
 import smoothscroll from "smoothscroll-polyfill"
 
 import { scrollToTop } from "../utils"
+import logo from '../images/logo.png';
 
 try {
   smoothscroll.polyfill()
@@ -79,6 +80,7 @@ export default function Footer() {
           Back to top
         </a>
       </div>
+      <img className="logo" src={logo} />
     </footer>
   )
 }

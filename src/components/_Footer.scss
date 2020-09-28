@@ -5,8 +5,15 @@ footer {
   flex-direction: column;
   background: $white;
 
-  @include mobile {
-    margin-bottom: 470px;
+  .logo {
+    height: 0;
+    width: auto;
+
+    @include mobile {
+      height: 300px;
+      width: auto;
+      margin: 90px 0;
+    }
   }
  
   .copyright-container {
