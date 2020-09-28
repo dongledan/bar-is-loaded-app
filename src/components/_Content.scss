@@ -74,6 +74,49 @@
         font-size: 0.9em;
       }
     }
+    .stars {
+      font-size: x-large;
+      color: #ffa500;
+      margin-top: 10vh;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    .review-title {
+      font-size: 1em;
+      margin: 10px 0;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+    .review {
+      font-size: 0.9em;
+      font-weight: 200;
+      line-height: 1.3em;
+      color: $gray;
+      margin-bottom: 10px;
+
+      .quote {
+        font-size: 1.5em;
+        opacity: 0.5;
+        color: $gray;
+        position: absolute;
+      }
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+    .review-author {
+      font-size: x-small;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
   }
 
   .iphone {

@@ -10,7 +10,7 @@ export default function Navbar() {
         position: "absolute",
         top: 0,
         width: "100%",
-        zIndex: 99,
+        zIndex: 2000,
         background: "#E22418",
       }}
     >
