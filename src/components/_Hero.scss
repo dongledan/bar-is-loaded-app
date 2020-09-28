@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+  @include mobile {
+    background-attachment: scroll;
+  }
+
   .width-container {
     max-width: 1096px;
     display: flex;
