@@ -4,6 +4,10 @@
   padding: 20px 0;
   max-width: 1096px;
   z-index: 2000;
+
+  @include mobile {
+    padding: 10px 0;
+  }
   
   .navbar {
     justify-content: space-between;
@@ -17,6 +21,7 @@
 
       @include mobile {
         margin: 0 5%;
+        font-size: .9em;
       }
     }
 
@@ -30,6 +35,11 @@
         height: 60px;
         width: 60px;
         border-radius: 10px;
+
+        @include mobile {
+          height: 40px;
+          width: 40px;
+        }
       }
 
       .logo-content {

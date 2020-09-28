@@ -32,7 +32,7 @@
       background-position: center;
 
       @include mobile {
-        top: 80%;
+        top: 85%;
         left: 50%;
         margin-left: -147.69px;
         position: fixed;
@@ -48,8 +48,9 @@
       justify-content: center;
 
         @include mobile {
-          margin-top: 100px;
+          margin-top: 60px;
           width: 90%;
+          height: calc(100% - 460px);
           align-items: center;
         }
 
@@ -61,7 +62,7 @@
           font-size: 3em;
 
           @include mobile {
-            font-size: 2em;
+            font-size: 1.5em;
             margin: 10px auto 0 auto; 
           }
         }
@@ -80,6 +81,7 @@
           @include mobile {
             margin: 10px 0 20px 0;
             font-weight: 300;
+            font-size: 0.9em;
           }
         }
       }
