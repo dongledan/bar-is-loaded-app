@@ -3,7 +3,21 @@
   background: $white;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  flex-direction: column;
+  max-width: 1096px;
+  margin: auto;
+
+  .closing-header {
+    font-size: 1.5em;
+  }
+
+  .closing-subheader {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+  }
 
   .button-container {
     display: flex;
