@@ -5,18 +5,6 @@
   margin: 40px auto;
   align-items: center;
 
-  .features-header {
-    font-size: 1.5em;
-  }
-
-  .features-subheader {
-    font-size: 1em;
-    line-height: 1.5em;
-    margin: 20px 0;
-    width: 60%;
-    text-align: center;
-  }
-
   .features-box {
     display: flex;
     flex-direction: row;
@@ -24,7 +12,7 @@
     z-index: 99;
     background: $background;
     padding: 30px 0;
-    border-radius: 10px;
+    border-radius: 20px;
 
     .icon-container {
       width: 30%;

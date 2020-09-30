@@ -3,8 +3,8 @@ import React from "react"
 export default function Closing() {
   return (
     <div className="closing-container">
-      <div className="closing-header">Load The Bar</div>
-      <div className="closing-subheader">You've made it this far. All there is left to do head over to the app store and download Bar Is Loaded today.</div>
+      <div className="closing-header">Load The Bar Already</div>
+      <div className="closing-subheader">What are you waiting for? You've made it this far. All there is left to do head over to the app store and download <strong>Bar Is Loaded</strong> today.</div>
       <div className="button-container">
         <a
           rel="noopener noreferrer"

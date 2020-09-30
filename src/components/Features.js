@@ -15,8 +15,6 @@ export default class Features extends Component {
   render() {
     return (
       <div className="features-container">
-        <div className="features-header">The Everyday Gym Calculator</div>
-        <div className="features-subheader">Quick maths is hard, especially when the pre-workout kicks in. Bar Is Loaded takes the math out of the gym and displays exactly what you need for your next lift. It doesn't matter if it's in kilograms or pounds, we got you covered. </div>
         <div className="features-box">
           <div className="icon-container">
             <IoIosSpeedometer className="icon" />

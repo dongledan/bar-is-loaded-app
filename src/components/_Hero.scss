@@ -58,6 +58,7 @@
       .header {
         font-size: 3.5em;
         color: $white;
+        font-weight: 800;
 
         @include tablet {
           font-size: 2em;
