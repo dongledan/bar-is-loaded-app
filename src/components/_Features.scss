@@ -12,7 +12,12 @@
     z-index: 99;
     background: $background;
     padding: 30px 0;
+    margin-bottom: 100px;
     border-radius: 20px;
+
+    @include mobile {
+      padding: 0;
+    }
 
     .icon-container {
       width: 30%;

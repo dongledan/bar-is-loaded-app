@@ -30,6 +30,14 @@ h2 {
   font-weight: 800;
   font-size: 2.5em;
   align-self: end;
+  width: 100%;
+
+  @include mobile {
+    font-size: 2em;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 strong {

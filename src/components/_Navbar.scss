@@ -43,7 +43,7 @@
         flex-direction: column;
         text-decoration: none;
         cursor: pointer;
-        color: #fff;
+        color: $white;
         margin: 0 10px;
 
         .logo-text {
@@ -70,7 +70,7 @@
       position: relative;
       margin: 0 25px;
       padding: 10px 0;
-      color: #fff;
+      color: $white;
       cursor: pointer;
 
       &:after {

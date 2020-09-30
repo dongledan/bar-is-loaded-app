@@ -20,10 +20,14 @@
     margin: 0 auto 0 auto;
     z-index: 1000;
 
-    @include mobile {
-      flex-direction: column;
-      justify-content: flex-start;
-      margin: 0 auto;
+    @include tablet {
+      margin-top: 80px;
+
+      @include mobile {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+      }
     }
 
     .hero-iphone {
