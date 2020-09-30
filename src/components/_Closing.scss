@@ -3,7 +3,32 @@
   background: $white;
   justify-content: center;
   align-items: center;
-  padding: 40px 0;
+  flex-direction: column;
+  max-width: 1096px;
+  margin: auto;
+
+  .closing-header {
+    font-size: 2.5em;
+
+    @include mobile {
+      font-size: 2em;
+      margin: 0 auto;
+    }
+
+  }
+
+  .closing-subheader {
+    font-size: 1.188em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin: 40px auto;
+    width: 60%;
+    text-align: center;
+
+    @include mobile {
+      width: 90%;
+    }
+  }
 
   .button-container {
     display: flex;

@@ -1,48 +1,59 @@
 .features-container {
-  display: flex;
-  flex-direction: row;
   max-width: 1096px;
-  margin: 0 auto;
-  justify-content: center;
-  flex-wrap: wrap;
-  z-index: 99;
-  background: $background;
-  padding: 30px 0;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  align-items: center;
 
-  .icon-container {
-    width: 30%;
+  .features-box {
     display: flex;
-    align-items: center;
-    justify-content: stretch;
-    flex-direction: column;
-    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 99;
+    background: $background;
+    padding: 30px 0;
+    margin-bottom: 100px;
+    border-radius: 20px;
 
     @include mobile {
-      width: 40%;
+      padding: 0;
     }
 
-    .icon {
-      color: $red;
-      font-size: 40px;
-      background: #D6D6D6;
-      border-radius: 50%;
-      padding: 6px;
-    }
-
-    .feature-title {
-      font-weight: 600;
-      font-size: 1.188em;
-      margin: 10px 0 5px 0;
-    }
-
-    .feature-content {
-      font-weight: 200;
-      text-align: center;
+    .icon-container {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: stretch;
+      flex-direction: column;
+      padding: 10px;
 
       @include mobile {
-        font-size: 0.9em;
+        width: 80%;
+        margin: 10px auto;
+      }
+
+      .icon {
+        color: $red;
+        font-size: 60px;
+        background: #D6D6D6;
+        border-radius: 50%;
+        padding: 6px;
+      }
+
+      .feature-title {
+        font-weight: 600;
+        font-size: 1.188em;
+        margin: 10px 0 5px 0;
+      }
+
+      .feature-content {
         font-weight: 200;
+        text-align: center;
+
+        @include mobile {
+          font-size: 0.9em;
+          font-weight: 200;
+        }
       }
     }
   }

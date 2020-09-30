@@ -1,147 +1,208 @@
 .content-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 60vh;
-  flex-direction: row;
-  max-width: 1096px;
-  margin: 0 auto 40px auto;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 50px 0;
 
   @include mobile {
-    margin-top: 10vh;
+    padding: 25px 0;
   }
 
-  .box {
-    flex: 1;
-    margin-left: 15%;
+  .content-title {
+    font-size: 2.5em;
+    text-align: center;
 
     @include mobile {
-      display: none;
+      font-size: 2em;
     }
   }
 
-  .feature-container {
-    flex: 1;
-    justify-content: center;
-    margin-right: 15%;
-    display: flex;
-    flex-direction: column;
+  .content-title-content {
+    font-size: 1.188em;
+    line-height: 1.5em;
+    font-weight: 300;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
 
-    @include tablet {
-      margin-right: 10%;
-
-      @include mobile {
-        flex: none;
-        max-width: 300px;
-        margin: 0 auto;
-        justify-content: flex-start;
-      }
+    @include mobile {
+      width: 90%;
+      font-size: 1em;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
-  
+  }
 
-    .feature-title {
+  .content-grid {
+    display: grid;
+    grid-column-gap: 32px;
+    grid-template-columns: 2fr 1fr;
+    padding: 120px 0 170px 0;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content-image {
+      grid-row-start: span 2;
+      grid-row-end: span 2;
+      grid-column-start: span 1;
+      grid-column-end: span 1;
+      justify-self: start;
       position: relative;
-      font-weight: 600;
-      font-size: 1.188em;
-      margin-bottom: 10px;
-      padding: 10px 0;
-      
-      .feature-line {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 20%;
-        background: $red;
-        height: 4px;
-        border-radius: 10px;
+  
+  
+      .image {
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+        width: 260px;
+        border-radius: 30px;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.25);
+        // box-shadow: 
+        // 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+        // -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
 
         @include mobile {
-          left: 40%;
-          top: 95%;
+          width: 60%;
+          margin: 0 5%;
+        }
+      }
+  
+      .one {
+        position: relative;
+        z-index: 1;
+      }
+  
+      .two {
+        position: absolute;
+        left: auto;
+        top: 9%;
+        right: -60%;
+        bottom: 0;
+        z-index: 0;   
+        
+        @include mobile{
+          right: 0;
         }
       }
 
-      @include mobile {
-        text-align: center;
-      }
-    }
-    .feature-content {
-      line-height: 1.5em;
-      font-weight: 200;
-
-      @include mobile {
-        text-align: center;
-        font-size: 0.9em;
-      }
-    }
-    .stars {
-      font-size: x-large;
-      color: #ffa500;
-      margin-top: 10vh;
-
-      @include mobile {
-        text-align: center;
-      }
-    }
-
-    .review-title {
-      font-size: 1em;
-      margin: 10px 0;
-
-      @include mobile {
-        text-align: center;
-      }
-    }
-    .review {
-      font-size: 0.9em;
-      font-weight: 200;
-      line-height: 1.3em;
-      color: $gray;
-      margin-bottom: 10px;
-
-      .quote {
-        font-size: 1.5em;
-        opacity: 0.5;
-        color: $gray;
+      .three {
         position: absolute;
-      }
+        bottom: 0;
+        right: -60%;
+        z-index: 0;
+        top: 9%;
 
-      @include mobile {
-        text-align: center;
+        @include mobile {
+          right: 0;
+        }
+      }
+      .four {
+        position: absolute;
+        bottom: 0;
+        right: 60%;
+        z-index: 2;
+        top: -9%;
+
+        @include mobile {
+          visibility: hidden;
+        }
       }
     }
-    .review-author {
-      font-size: x-small;
+    .content-header {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      position: relative;
 
-      @include mobile {
-        text-align: center;
+      .content-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        background: $red;
+        opacity: 0.4;
+        height: 24px;
+        border-radius: 10px;
+
+        @include mobile {
+          left: 30%;
+          top: 40%;
+        }
       }
     }
-  }
+    .content-header-2 {
+      grid-column-start: 1; 
+      grid-row-start: 1;
+      position: relative;
 
-  .iphone {
-    position: fixed;
-    top: 50%;
-    left: 23%;
-    width: auto;
-    height: 600px;
-    margin-top: -300px;
-    z-index: -2;
-    background-size: auto 572px;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    @include tablet {
-      left: 10%;
+      .content-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        background: $red;
+        height: 24px;
+        opacity: 0.4;
+        border-radius: 10px;
 
-      @include mobile {
-        top: 85%;
-        left: 50%;
-        z-index: 1000;
-        margin-left: -147.69px;
-        transition: height 0.2s;
+        @include mobile {
+          left: 30%;
+          top: 40%;
+        }
+      }
+    }
+
+    .multi {
+      .content-line {
+        @include mobile {
+          margin-top: 23px;
+        }
       }
     }
   
+    .content-subheader {
+      grid-column-end: 3;
+      grid-column-start: 2;
+      grid-row-end: 3;
+      grid-row-start: 2;
+      line-height: 1.5em;
+      font-size: 1.188em;
+      font-weight: 300;
+
+      @include mobile {
+        margin: 0 10px;
+        padding-bottom: 25px;
+        font-size: 1em;
+        text-align: center;
+      }
+    }
+
+    .content-subheader-2 {
+      grid-column-end: 2;
+      grid-column-start: 1;
+      grid-row-end: 3;
+      grid-row-start: 2;
+      line-height: 1.5em;
+      font-size: 1.188em;
+      font-weight: 300;
+
+      @include mobile {
+        margin: 0 10px;
+        padding-bottom: 25px;
+        font-size: 1em;
+        text-align: center;
+      }
+    }
   }
+  .column-length {
+    grid-template-columns: 1fr 2fr;
+    padding: 150px 0;
+    grid-column-gap: 52px;
+
+    @include mobile {
+      padding: 50px 0;
+    }
+  }
+
 }

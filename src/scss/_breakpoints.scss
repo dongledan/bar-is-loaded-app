@@ -1,8 +1,8 @@
-$tablet-width: 769px;
+$tablet-width: 767px;
 $desktop-width: 1024px;
 
 @mixin mobile {
-  @media (max-width: #{$tablet-width - 1px}) {
+  @media (max-width: #{$tablet-width - 1px}) and (orientation: portrait) {
     @content;
   }
 }

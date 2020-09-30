@@ -10,8 +10,7 @@ export default function Navbar() {
         position: "absolute",
         top: 0,
         width: "100%",
-        zIndex: 2000,
-        background: "#E22418",
+        zIndex: 2000
       }}
     >
       <div className="navbar-container">
