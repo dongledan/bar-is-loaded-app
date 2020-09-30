@@ -11,7 +11,6 @@ export default function Navbar() {
         top: 0,
         width: "100%",
         zIndex: 2000,
-        background: "#E22418",
       }}
     >
       <div className="navbar-container">

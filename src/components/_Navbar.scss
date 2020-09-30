@@ -1,13 +1,9 @@
 .navbar-container {
   display: flex;
   margin: 0 auto;
-  padding: 20px 0;
+  padding-top: 20px;
   max-width: 1096px;
   z-index: 2000;
-
-  @include mobile {
-    padding: 10px 0;
-  }
   
   .navbar {
     justify-content: space-between;

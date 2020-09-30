@@ -12,7 +12,8 @@ export default class Hero extends Component {
       <div className="hero-container">
         <div className="width-container">
           <div className="hero-content-container">
-            <div className="header">It's leg day, not brain day.</div>
+            <div className="header">It's leg day,</div>
+            <div className="header">not brain day.</div>
             <div className="subtitle">
               The modern barbell calculator for calculating plates needed. Focus
               on the lift, not the math.

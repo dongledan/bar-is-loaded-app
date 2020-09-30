@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   max-width: 1096px;
-  margin: 0 auto;
+  margin: 40px auto;
   justify-content: center;
   flex-wrap: wrap;
   z-index: 99;
@@ -19,12 +19,13 @@
     padding: 10px;
 
     @include mobile {
-      width: 40%;
+      width: 80%;
+      margin: 10px;
     }
 
     .icon {
       color: $red;
-      font-size: 40px;
+      font-size: 60px;
       background: #D6D6D6;
       border-radius: 50%;
       padding: 6px;

@@ -132,13 +132,14 @@
     background-position: center;
     
     @include tablet {
-      left: 10%;
 
       @include mobile {
+        height: 70%;
         top: 85%;
-        left: 50%;
         z-index: 1000;
-        margin-left: -147.69px;
+        width: auto;
+        margin-right: calc(width/2);
+        background-size: auto 95%;
         transition: height 0.2s;
       }
     }

@@ -13,10 +13,11 @@
 
   .width-container {
     max-width: 1096px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 100px auto 0 auto;
+    margin: 0 auto 0 auto;
     z-index: 1000;
 
     @include mobile {
@@ -26,24 +27,18 @@
     }
 
     .hero-iphone {
-      position: relative;
       width: auto;
-      height: 600px;
+      height: 70%;
       z-index: 50;
       background-image: url('../images/img-1.png');
-      background-size: auto 572px;
+      background-size: auto 95%;
       background-repeat: no-repeat;
       background-position: center;
 
       @include mobile {
-        top: 85%;
-        left: 50%;
-        margin-left: -147.69px;
-        position: fixed;
-        margin-top: -300px;
-        z-index: 0;
-        transition: height 0.2s;
+        height: 66%;
       }
+      
     }
     
     .hero-content-container {
@@ -55,8 +50,9 @@
         @include mobile {
           margin-top: 60px;
           width: 90%;
-          height: calc(100% - 520px);
           align-items: center;
+          height: 33%;
+          text-align: center;
         }
 
       .header {
@@ -64,11 +60,10 @@
         color: $white;
 
         @include tablet {
-          font-size: 3em;
+          font-size: 2em;
 
           @include mobile {
-            font-size: 1.5em;
-            margin: 10px auto 0 auto; 
+            font-size: 1.7em;
           }
         }
       }
@@ -80,13 +75,13 @@
         font-weight: 300;
 
         @include tablet {
-          font-size: 1em;
+          font-size: .9em;
           line-height: 1.4em;
 
           @include mobile {
-            margin: 10px 0 20px 0;
-            font-weight: 300;
-            font-size: 0.9em;
+            height: 0;
+            margin: 10px;
+            visibility: hidden;
           }
         }
       }
