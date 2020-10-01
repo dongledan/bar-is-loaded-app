@@ -32,7 +32,7 @@ export default function Reviews() {
   ]
   return (
     <div className="reviews-container">
-      <div className="review-header">From Your Swole Mates</div>
+      <div className="review-header">From Your Swole Mates <br/>⚪ ⚪ ⚪</div>
       {reviews.map((review, i) => (
         <div key={review.author} className="single-review">
           <div className="title-container">
