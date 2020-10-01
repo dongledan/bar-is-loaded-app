@@ -41,6 +41,8 @@
 
       @include mobile {
         height: 66%;
+        top: 50%;
+        position: absolute;
       }
       
     }
@@ -55,7 +57,7 @@
           margin-top: 60px;
           width: 90%;
           align-items: center;
-          height: 33%;
+          height: 43%;
           text-align: center;
         }
 
@@ -66,10 +68,6 @@
 
         @include tablet {
           font-size: 2em;
-
-          @include mobile {
-            font-size: 1.7em;
-          }
         }
       }
       .subtitle {
@@ -84,8 +82,8 @@
           line-height: 1.4em;
 
           @include mobile {
+            margin: 10px 0 20px 0;
             height: 0;
-            margin: 10px;
             visibility: hidden;
           }
         }

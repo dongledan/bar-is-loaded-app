@@ -5,6 +5,10 @@
   flex-direction: column;
   padding: 0 10%;
 
+  @include mobile {
+    padding: 0 5%;
+  }
+
   .privacy-policy-header {
     font-size: 2em;
     text-align: center;

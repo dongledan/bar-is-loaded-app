@@ -6,6 +6,7 @@
 @import '../components/Layout';
 @import '../components/Content';
 @import '../components/Features';
+@import '../components/Reviews';
 @import '../components/Closing';
 @import '../components/PrivacyPolicy';
 @import '../components/Footer';
@@ -34,7 +35,7 @@ h2 {
 
   @include mobile {
     font-size: 2em;
-    text-align: center;
+    width: 90%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -42,4 +43,10 @@ h2 {
 
 strong {
   color: $red;
+}
+
+.review {
+  font-weight: 500;
+  background-color: rgba(228, 34, 24, 0.1);
+  border-radius: 4px;
 }
