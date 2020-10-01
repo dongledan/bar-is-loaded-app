@@ -26,7 +26,7 @@ export default function Content() {
       </div>
       <div className="content-grid column-length">
         <h2 className="content-header-2">
-          Suggestions.
+          Stuck? We Got You.
           <div className="content-line" />
 
         </h2>
@@ -38,7 +38,7 @@ export default function Content() {
       </div>
       <div className="content-grid">
         <h2 className="content-header">
-          All In One.
+          All In One App.
           <div className="content-line" />
         </h2>
         <div className="content-subheader">Upcoming <strong>powerlifting meet</strong>? Got <strong>Wilks</strong>? <strong>RPE</strong>/<strong>RIR</strong> training? <strong>Bar Is Loaded</strong> has it all. It's more than just calculations.</div>

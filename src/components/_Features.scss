@@ -49,6 +49,8 @@
       .feature-content {
         font-weight: 200;
         text-align: center;
+        font-size: 1em;
+        line-height: 1.5em;
 
         @include mobile {
           font-size: 0.9em;
