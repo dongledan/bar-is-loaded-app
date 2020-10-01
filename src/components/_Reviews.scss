@@ -1,0 +1,53 @@
+.reviews-container {
+  max-width: 1096px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding-bottom: 100px;
+
+  .review-header {
+    position: absolute;
+    font-size: 2.5em;
+
+    @include mobile {
+      font-size: 2em;
+    }
+  }
+
+  .single-review {
+    margin-top: 80px;
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      width: 90%;
+      margin: 80px auto;
+    }
+
+    .stars {
+      color: #ffa500;
+      font-size: 2em;
+    }
+
+    .review-title {
+      font-size: 1.188em;
+      font-weight: 600;
+    }
+
+    .review-author {
+      font-size: smaller;
+      color: $lightGray;
+      margin: 5px auto 10px auto;
+    }
+
+    .review-content {
+      font-size: 1em;
+      line-height: 1.5em;
+      color: $gray;
+    }
+  }
+}

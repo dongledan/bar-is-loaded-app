@@ -27,8 +27,8 @@ export default class Features extends Component {
             <IoIosPricetag className="icon" />
             <div className="feature-title">Free</div>
             <div className="feature-content">
-              What's better than free? You get all the features without having to
-              pay.
+              What's better than free? You get all the features without having
+              to pay.
             </div>
           </div>
           <div className="icon-container">
@@ -50,8 +50,8 @@ export default class Features extends Component {
             <IoIosListBox className="icon" />
             <div className="feature-title">Percent Tables</div>
             <div className="feature-content">
-              Easily warm up with the built in percent table. Need to find 85% of
-              a weight?
+              Easily warm up with the built in percent table. Need to find 85%
+              of a weight?
             </div>
           </div>
           <div className="icon-container">
@@ -63,7 +63,6 @@ export default class Features extends Component {
           </div>
         </div>
       </div>
-
     )
   }
 }
