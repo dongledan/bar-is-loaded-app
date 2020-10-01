@@ -3,6 +3,8 @@ module.exports = {
     title: `Bar Is Loaded`,
     description: `An app for gym goers.`,
     author: `Danny Li`,
+    url: `https://barisloadedapp.com/`,
+    image: `/app.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
