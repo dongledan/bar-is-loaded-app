@@ -32,6 +32,7 @@ export default function Reviews() {
   ]
   return (
     <div className="reviews-container">
+      <h4 className="reviews-desc">TESTIMONIALS <span className="line" /></h4>
       <div className="review-header">From Your Swole Mates <br/>⚪ ⚪ ⚪</div>
       {reviews.map((review, i) => (
         <div key={review.author} className="single-review">
@@ -39,7 +40,7 @@ export default function Reviews() {
             <div className="stars">★★★★★</div>
             <div className="review-title">“{review.title}”</div>
             <div className="review-author">
-              by {review.author} from the App Store
+              by {review.author} via App Store
             </div>
           </div>
 

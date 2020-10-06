@@ -9,10 +9,10 @@
 
   .closing-header {
     font-size: 2.5em;
+    margin: 20px 0 0 0;
 
     @include mobile {
       font-size: 2em;
-      margin: 0 auto;
     }
 
   }

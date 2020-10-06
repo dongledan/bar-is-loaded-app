@@ -18,6 +18,7 @@ export default function Content() {
         it's in <strong>kilograms</strong> or <strong>pounds</strong>, we got
         you covered.{" "}
       </div>
+      <h4 className="content-desc">FEATURES<span className="line" /></h4>
       <div className="content-grid">
         <h2 className="content-header multi">
           Customize. Calculate. Lift.
