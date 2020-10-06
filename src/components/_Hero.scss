@@ -38,9 +38,11 @@
       background-size: auto 95%;
       background-repeat: no-repeat;
       background-position: center;
+      min-height: 300px;
 
       @include mobile {
         height: 66%;
+        max-height: 700px;
         top: 50%;
         position: absolute;
       }
