@@ -3,7 +3,6 @@ import React from "react"
 export default function Closing() {
   return (
     <div className="closing-container">
-      <h4>DOWNLOAD TODAY!<span className="line" /></h4>
       <div className="closing-header">Load The Bar Already</div>
       <div className="closing-subheader">
         What are you waiting for? You've come this far. All there is left to do
