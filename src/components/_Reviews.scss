@@ -3,15 +3,16 @@
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: stretch;
   padding-bottom: 100px;
+  position: relative;
 
   .review-header {
     position: absolute;
     font-size: 2.5em;
     text-align: center;
-    margin-top: -100px;
+    margin-top: -60px;
 
     @include mobile {
       font-size: 2em;
@@ -20,9 +21,27 @@
 
   .single-review {
     width: 40%;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    .quote {
+      position: absolute;
+      left: -30px;
+      top: 0;
+      font-size: 220px;
+      color: $red;
+      z-index: -1;
+      opacity: 0.07;
+      font-style: italic;
+
+      @include mobile {
+        left: -15px;
+        font-size: 200px;
+      }
+    }
 
     @include mobile {
       width: 90%;
@@ -38,12 +57,13 @@
     .review-title {
       font-size: 1.188em;
       font-weight: 600;
+      margin: 10px 0;
     }
 
     .review-author {
       font-size: smaller;
       color: $lightGray;
-      margin: 5px auto 10px auto;
+      margin-top: 10px;
     }
 
     .review-content {

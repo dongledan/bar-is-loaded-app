@@ -4,7 +4,7 @@ module.exports = {
     description: `An app for gym goers.`,
     author: `Danny Li`,
     url: `https://barisloadedapp.com/`,
-    image: `/app.png`
+    image: `/app.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,7 +43,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

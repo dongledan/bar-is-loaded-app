@@ -58,6 +58,33 @@ footer {
         text-decoration: none;
         cursor: pointer;
         color: $black;
+        position: relative;
+        padding-bottom: 5px;
+        
+    
+        &:after {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          margin: auto;
+          height: 3px;
+          transform: scaleX(0);
+          background: $red;
+          content: '';
+          transition: transform 0.3s;
+        }
+    
+        &:hover {
+          transition: 0.3s;
+  
+          &:after {
+            transform: scaleX(1);
+            border-radius: 5px;
+  
+          }
+        }
       }
 
     }
