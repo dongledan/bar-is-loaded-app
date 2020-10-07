@@ -32,15 +32,13 @@ export default function Reviews() {
   ]
   return (
     <div className="reviews-container">
-      <div className="review-header">From Your Swole Mates <br/>⚪ ⚪ ⚪</div>
+      <div className="review-header">What Lifters Are Saying</div>
       {reviews.map((review, i) => (
         <div key={review.author} className="single-review">
+          <div className="quote">"</div>
           <div className="title-container">
             <div className="stars">★★★★★</div>
-            <div className="review-title">“{review.title}”</div>
-            <div className="review-author">
-              by {review.author} via App Store
-            </div>
+            <div className="review-title">{review.title}</div>
           </div>
 
           <div className="review-content">
@@ -48,6 +46,7 @@ export default function Reviews() {
             {content[i]}
             {review.end}
           </div>
+          <div className="review-author">by {review.author} via App Store</div>
         </div>
       ))}
     </div>

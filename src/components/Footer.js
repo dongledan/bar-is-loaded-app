@@ -52,11 +52,14 @@ export default function Footer() {
         </div>
         <div className="footer-links-container">
           <Link className="footer-link" to={"/privacy-policy"}>
-            Privacy Policy •{" "}
+            Privacy Policy
           </Link>
+          <span> • </span>
           <a className="footer-link" href="mailto:dongledan@yahoo.com">
-            Contact •{" "}
+            Contact
           </a>
+          <span> • </span>
+
           <a
             className="footer-link"
             style={{ color: "#E42218" }}
