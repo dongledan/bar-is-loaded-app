@@ -7,6 +7,14 @@ module.exports = {
     image: `/app.png`,
   },
   plugins: [
+    {
+        resolve: `gatsby-plugin-google-analytics`,
+        options: {
+            trackingId: `UA-178028561-2`,
+            head: true,
+            anonymize: true
+        },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
