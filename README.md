@@ -6,7 +6,7 @@
 
 # Bar Is Loaded
 
-[Google Play Store](https://play.google.com/store/apps/details?id=com.dongledan.barisloaded) | [Apple App Store](https://apps.apple.com/us/app/bar-is-loaded-gym-calculator/id1509374210?ls=1) | [Live Website](https://barisloadedapp.com/)
+[Google Play Store](https://play.google.com/store/apps/details?id=com.dongledan.barisloaded2) | [Apple App Store](https://apps.apple.com/us/app/bar-is-loaded-gym-calculator/id1509374210?ls=1) | [Live Website](https://barisloadedapp.com/)
 
 ## Mission
 
