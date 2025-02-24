@@ -19,7 +19,6 @@ export default function Navbar() {
             <img className="logo" src={logo} alt="logo-icon" />
             <div className="logo-content">
               <div className="logo-text">Bar Is Loaded — Gym Calculator</div>
-              <div className="logo-price">Free</div>
             </div>
           </Link>
         </nav>

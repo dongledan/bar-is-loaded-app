@@ -29,7 +29,7 @@ export default class Hero extends Component {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://play.google.com/store/apps/details?id=com.dongledan.barisloaded&hl=en_US"
+                href="https://play.google.com/store/apps/details?id=com.dongledan.barisloaded2&hl=en_US"
               >
                 <div className="google-play" />
               </a>
